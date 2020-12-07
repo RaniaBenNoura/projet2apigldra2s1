@@ -9,4 +9,4 @@
 <li> Appliquez les migrations : php bin/console doctrine:schema:update</li>
 <li> Envoyez les fixtures à la base de données : php bin/console doctrine:fixture:load</li>
 <li> Lancez le server : symfony server:start</li>
-</ol>
+</ol># projet2apigldra2s1
