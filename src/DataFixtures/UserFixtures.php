@@ -16,17 +16,17 @@ $this->passwordEncoder = $passwordEncoder;
 public function load(ObjectManager $manager)
 {
     $user = new User();
-    $user->setEmail('john@wick.us');
-    $user->setNom('wick');
-    $user->setPassword('john');
+    $user->setEmail('admin@gmail.com');
+    $user->setNom('admin');
+    $user->setPassword('admin');
     $user->setRoles(['ROLE_ADMIN']);
-    $user->setPassword($this->passwordEncoder->encodePassword($user, 'wick'));
+    $user->setPassword($this->passwordEncoder->encodePassword($user, 'admin'));
     $manager->persist($user);
     $user2 = new User();
-    $user2->setEmail('jack@dalton.us');
-    $user2->setNom('dalton');
-    $user2->setPassword('jack');
-    $user2->setPassword($this->passwordEncoder->encodePassword($user2, 'dalton'));
+    $user2->setEmail('rania@gmail.com');
+    $user2->setNom('rania');
+    $user2->setPassword('rania');
+    $user2->setPassword($this->passwordEncoder->encodePassword($user2, 'rania'));
     $manager->persist($user2);
     $manager->flush();
 }
