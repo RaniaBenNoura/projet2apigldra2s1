@@ -10,3 +10,4 @@
 <li> Envoyez les fixtures à la base de données : php bin/console doctrine:fixture:load</li>
 <li> Lancez le server : symfony server:start</li>
 </ol># projet2apigldra2s1
+# bookSymfony
